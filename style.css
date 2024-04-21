@@ -8,6 +8,8 @@
 }
 
 .container {
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
 }
@@ -57,7 +59,6 @@ main {
 
 .image-logo {
     width: 595px;
-    height: 500px;
     margin: 0 45px;
 }
 
@@ -89,95 +90,55 @@ h1 {
     letter-spacing: 1px;
     cursor: pointer;
 }
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin: auto auto;
+    padding: 10px 5px;
+}
 
 .develop {
     text-align: center;
     color: #4CB538;
-    margin: 15px 0;
 }
 
-/* @media screen and (max-width: 1280px) {
-    header {
-        margin: 47px 0 110px 42px;
+ @media screen and (max-width: 1200px) {
+    main {
+        flex-direction: column-reverse;
     }
 
-    .image-logo {
-        margin-right: 50px;
-        margin-left: 47px;
-    }
-} */
-
-/* @media screen and (max-width: 1200px) {
-    header {
+    h1 {
         text-align: center;
-        margin: 20px auto ;
+        font-size: 3rem;
     }
-
-    .image-logo {
-        display: block;
-        margin: 0 auto;
-    }
-    section {
-        display: block;
-    }
-
-    h1, p{
-        margin: 30px auto;
-        text-align: center;
-    }
-
-    .link-learn-more {
-        display: block;
-        text-align: center;
-    }
+    
 }
 
-@media screen and (max-width: 600px) {
+ @media screen and (max-width: 610px) {
+    header {
+        margin: 20px;
+        justify-content: end;
+    }
+
     .link-header {
         display: none;
     }
 
-    header {
-        text-align: end;
-        margin: 20px 20px 0 0 ;
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 75%;
+        margin: 25px auto;
+        font-size: 1rem;
+        text-align: justify;
     }
 
     .image-logo {
-        display: block;
         width: 90%;
-        height: 90%;
-        margin: 030px auto;
     }
-    section {
-        display: block;
-    }
-
-    h1 {
-        width: 278px;
-        font-size: 30px;
-        line-height: 30px;
-        letter-spacing: 0.6px;
-        margin: 30px auto;
-        text-align: center;
-    }
-
-    p {
-        width: 350px;
-        text-align: center;
-        font-size: 18px;
-        line-height: 33px;
-        letter-spacing: 0.5px;
-        margin: 26px auto;
-    }
-
-    .link-learn-more {
-        display: block;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    p {
-        width: 304px;
-    }
-} */
+ }
