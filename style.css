@@ -104,6 +104,15 @@ footer {
     color: #4CB538;
 }
 
+.develop a {
+    text-decoration: none;
+    color: #4CB538;
+}
+
+.develop a:hover {
+    color: #161A49;
+}
+
  @media screen and (max-width: 1200px) {
     main {
         flex-direction: column-reverse;
